@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vueblog.mapper.BlogFavoriteMapper">
+
+    <!-- 添加 countFavoriteByUserIdAndBlogId 查询语句映射 -->
+    <select id="countFavoriteByUserIdAndBlogId" resultType="int">
+        SELECT COUNT(*) FROM m_blog_favorite WHERE user_id = #{userId} AND blog_id = #{blogId}
+    </select>
+
+    <select id="findBlogIdsByUserId" resultType="java.lang.Long" parameterType="java.lang.Long">
+        SELECT blog_id FROM m_blog_favorite WHERE user_id =  #{userId}
+    </select>
+
+
+        <delete id="deleteByBlogId" parameterType="long">
+            DELETE FROM m_blog_favorite WHERE blog_id = #{blogId}
+        </delete>
+
+</mapper>

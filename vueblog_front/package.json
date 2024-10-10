@@ -1,0 +1,36 @@
+{
+  "name": "vue_blog_front",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.2",
+    "auto-textarea": "^1.4.0",
+    "axios": "^1.6.8",
+    "core-js": "^3.8.3",
+    "element-ui": "^2.13.2",
+    "github-markdown-css": "^5.5.1",
+    "markdown-it": "^14.1.0",
+    "mavon-editor": "^2.1.11",
+    "vue": "^2.6.14",
+    "vue-cropperjs": "^4.2.0",
+    "vue-router": "^3.5.1",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^14.0.1",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "css-loader": "^7.1.1",
+    "style-loader": "^4.0.0",
+    "stylus": "^0.63.0",
+    "stylus-loader": "^8.1.0",
+    "url-loader": "^4.1.1",
+    "vue-template-compiler": "^2.6.14"
+  }
+}
